@@ -156,7 +156,7 @@ describe("App", () => {
     
   });
 
-describe("deletes", () => {
+  describe("deletes", () => {
     test("recipe is deleted when the delete button is clicked", () => {
       const { container } = render(<App />);
       const row = container.querySelector('table tbody tr');
@@ -170,9 +170,7 @@ describe("deletes", () => {
           cancelable: true,
         })
       );
-      const newRow = container.querySelector('table tbody tr');
-      const newContent = within(newRow);
-      expect(newContent.queryByText(/Tuna Poke with Mango/)).toBeNull();
+      expect(content.queryByText(/Tuna Poke with Mango/)).toBeNull();
     });
-  });
+  });  
 });

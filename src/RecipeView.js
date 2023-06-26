@@ -3,7 +3,8 @@ import React from "react";
 function RecipeView({ recipe, deleteRecipe }) {
   return (
     <tr>
-      <td>{recipe.name}</td>try<td>{recipe.cuisine}</td>
+      <td>{recipe.name}</td>
+      <td>{recipe.cuisine}</td>
       <td>
         <img src = {recipe.photo} alt="http://www.nopicavailable.com" className="scala-e-down" /></td>
       <td className="content_td"><p>{(recipe.ingredients)}</p></td>
